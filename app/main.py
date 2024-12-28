@@ -22,7 +22,7 @@ class Animal:
 
     def check_is_alive(self) -> None:
         if self.health <= 0:
-            self.alive.remove(self)
+            Animal.alive.remove(self)
 
     def __repr__(self) -> str:
         return (f"{{Name: {self.name}, "
